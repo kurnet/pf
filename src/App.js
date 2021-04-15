@@ -69,7 +69,7 @@ export class App extends React.Component{
       <div className="App">
         <header className="App-header">
           <Profile name="Ho Pong, Shum"/>
-          <div style={{width: '80vw', height: this.state.vidHeight * 1.5, backgroundColor : '#282c40', paddingTop : '15px', margin : '10px'}} >
+          <div style={{width: '80vw', height: this.state.vidHeight * 2, backgroundColor : '#282c40', paddingTop : '15px', margin : '10px' }} className="slider_host" >
             <Slider hasArrows="true" onSlideChange={this.slideChangeHandler}>
               {pdata.projects.map( (item, index) => {
                 return <MyVid key={item.vid} vid={item.vid} opts={{height: this.state.vidHeight, width: this.state.vidWidth }} title={item.title} msg={item.msg} ref={this.arySlideRef[index]}/>

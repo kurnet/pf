@@ -33,6 +33,10 @@
   padding: 0 5vw;
 }
 
+.slider_host > div > div{
+  overflow-y: scroll;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

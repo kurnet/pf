@@ -20,7 +20,8 @@ export class App extends React.Component{
       winWidth : 0,
       winHeight : 0,
       vidWidth: 0,
-      vidHeight: 0
+      vidHeight: 0,
+      index: 0
     };
 
     this.updateDimensions = this.updateDimensions.bind(this);
@@ -64,15 +65,21 @@ export class App extends React.Component{
   };
 
   render() {
+    
     this.refreshVideoComponents();
+
     return (
       <div className="App">
         <header className="App-header">
           <Profile name="Ho Pong, Shum"/>
           <div style={{width: '80vw', height: this.state.vidHeight * 2, backgroundColor : '#282c40', paddingTop : '15px', margin : '10px' }} className="slider_host" >
-            <Slider hasArrows="true" onSlideChange={this.slideChangeHandler}>
+          <Slider hasArrows="true" onSlideChange={this.slideChangeHandler}>
               {pdata.projects.map( (item, index) => {
-                return <MyVid key={item.vid} vid={item.vid} opts={{height: this.state.vidHeight, width: this.state.vidWidth }} title={item.title} msg={item.msg} ref={this.arySlideRef[index]}/>
+                if(item.vid != undefined){
+                  return <MyVid key={item.vid} vid={item.vid} opts={{height: this.state.vidHeight, width: this.state.vidWidth }} title={item.title} msg={item.msg} ref={this.arySlideRef[index]}/>
+                }else if(item.type != undefined){
+                  return (<div>App<br />{item.title}<br />{item.msg}</div>);
+                }
               })}
             </Slider>
           </div>

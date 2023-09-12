@@ -73,9 +73,8 @@ export class App extends React.Component{
         <header className="App-header">
           <Profile name="Ho Pong, Shum"/>
           <div style={{width: '80vw', height: this.state.vidHeight * 2, backgroundColor : '#282c40', paddingTop : '15px', margin : '10px' }} className="slider_host" >
-          {/*
           <Slider hasArrows="true" onSlideChange={this.slideChangeHandler}>
-              {pdata.projects.map( (item, index) => {
+              {pdata.projects.forEach( (item, index) => {
                 if(item.vid != undefined){
                   return <MyVid key={item.vid} vid={item.vid} opts={{height: this.state.vidHeight, width: this.state.vidWidth }} title={item.title} msg={item.msg} ref={this.arySlideRef[index]}/>
                 }else if(item.type != undefined){
@@ -83,7 +82,6 @@ export class App extends React.Component{
                 }
               })}
             </Slider>
-            */}
           </div>
 
         </header>

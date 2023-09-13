@@ -47,6 +47,16 @@
   overflow-y: scroll;
 }
 
+.profile-header{
+  align-items: center;
+}
+
+.profile-pic{
+  max-width: 250px;
+  width: 20vw;
+  border-radius: 50%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -57,9 +67,11 @@
 }
 
 .name{
-  @media (max-width: 600px) {
-    font-size: 4vw; 
-  }
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.no-wrap{
+  text-wrap: nowrap;
 }
 
 .arrow {

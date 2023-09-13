@@ -18,28 +18,36 @@ export class Profile extends React.Component{
         
         return(
             <div className="Profile">
-                <Row>
+                <Row className='profile-header'>
                     <Col size={1}>
-                        <img alt="Welcome" src={pro_pic} style={{width: '30vw', maxWidth: '300px', borderRadius: 200/ 2}}/>
+                        <img className='profile-pic' src={pro_pic} />
                     </Col>
-                    <Col size={4}>
-                        <Row style={{height: '30%'}}></Row>
-                        <Row>
-                            <Col size={3}>
-                                <MediaQuery maxWidth={600}>
-                                    <span className="name">{this.props.name}</span>
-                                </MediaQuery>
-                                <MediaQuery minWidth={601}>
-                                    <h2 className="name">{this.props.name}</h2>
-                                </MediaQuery>
-                            </Col>
-                            <Col size={1} style={{ alignSelf : 'center' }}>
-                                <a href={this.linkedin_link} target="_blank" rel="noreferrer" >
-                                    <img alt="linkedin" src={ll_logo} style={{width:150}} />
-                                </a>
-                            </Col>
-                        </Row>
-                    </Col>
+                    <MediaQuery maxWidth={720}>
+                        <Col size={1}>
+                            <Row>
+                                <Col>
+                                    <span className="name no-wrap">{this.props.name}</span>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <a href={this.linkedin_link} target="_blank" rel="noreferrer" >
+                                        <img alt="linkedin" src={ll_logo} style={{width:80}} />
+                                    </a>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </MediaQuery>
+                    <MediaQuery minWidth={721}>
+                        <Col size={3}>
+                            <h2 className="name">{this.props.name}</h2>
+                        </Col>
+                        <Col size={1}>
+                            <a href={this.linkedin_link} target="_blank" rel="noreferrer" >
+                                <img alt="linkedin" src={ll_logo} style={{width:150}} />
+                            </a>
+                        </Col>
+                    </MediaQuery>
                 </Row>
                 <Row>
                     <Col style={{ fontSize : 'medium', textAlign : 'left', width : '90vw' }}> I have been a programmer/developer in Hong Kong for over 10 years and started my journey in the UK recently just over 2

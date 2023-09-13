@@ -42,11 +42,14 @@ export class Profile extends React.Component{
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ fontSize : 'medium', textAlign : 'left', width : '90vw' }}> I am a programmer, and being a programmer/developer in Hong Kong over 10 years. 
-                        I feel excited to study new technology and technology always has to keep learning.<p />
-In my career I mostly work with Game projects and always challenge myself and feel enjoyed. But it won't be limited to games dev. I got some experience in Mobile Applications development.<p />
-Personally, I like to make tools for helping solve problems, simplify processes and learning. And I believe that I am a fast learner to handle the new things.
-Additionally I have experience to leading a small team (10-) coding and managing with team together to develop mobile game which it happy to work with a team and grow together. 
+                    <Col style={{ fontSize : 'medium', textAlign : 'left', width : '90vw' }}> I have been a programmer/developer in Hong Kong for over 10 years and started my journey in the UK recently just over 2
+years ago. I feel excited there a lot about game dev and technology from a new place. <p />
+In my career I mostly work with Game projects and always feel challenged and enjoyed. But it won't be limited to games dev. I
+have experience in Mobile Applications development too. <p />
+Also I like to make tools to help solve problems, simplify processes and learn. I believe that I am a fast learner to handle new
+things.<p />
+Additionally, I enjoy working as a team member. It always makes me feel energized, but also I could work independently and
+review with a team to get the job done well. <p />
                     </Col>
                 </Row>
                 <Row>

@@ -6,9 +6,11 @@ import pdata from './data/prj.json';
 import './App.css';
 import { Profile } from './view/Profile';
 import { MyVid } from './view/ProductVideo';
-
+import { GameView } from './view/GameView';
+import { useEffect } from 'react';
 
 export class App extends React.Component{
+
   aryPrj = [];
   arySlideRef = [];
 
@@ -30,7 +32,6 @@ export class App extends React.Component{
     for (let vi = 0; vi < 10; ++vi){
       this.arySlideRef[vi] = React.createRef();
     }
-
   }
 
   refreshVideoComponents(){
@@ -79,13 +80,17 @@ export class App extends React.Component{
                   if(item.vid != undefined){
                     return <MyVid key={item.vid} vid={item.vid} opts={{height: this.state.vidHeight, width: this.state.vidWidth }} title={item.title} msg={item.msg} ref={this.arySlideRef[index]}/>
                   }else if(item.type != undefined){
-                    return (<div>App<br />{item.title}<br />{item.msg}</div>);
+                    if(item.type === "game"){
+                      return <GameView key={index} data={item}/>;
+                    }else{
+                      return (<div>App<br />{item.title}<br />{item.msg}</div>);
+                    }
                   }
                 })
               }
+              
             </Slider>
           </div>
-
         </header>
       </div>
     );

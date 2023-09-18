@@ -71,6 +71,10 @@
                 "Submittion link : <a href='https://globalgamejam.org/2020/games/0214-1' target='_blank'>Global Game Jam 2020</a> "
             ],
             "vid": "j9vATdn8_NU"
+        },
+        {
+            "title": "game",
+            "type": "game"
         }
     ]
 }

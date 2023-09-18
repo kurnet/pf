@@ -50,7 +50,9 @@ export class Profile extends React.Component{
                     </MediaQuery>
                 </Row>
                 <Row>
-                    <Col style={{ fontSize : 'medium', textAlign : 'left', width : '90vw' }}> I have been a programmer/developer in Hong Kong for over 10 years and started my journey in the UK recently just over 2
+                    <Col style={{ fontSize : 'medium', textAlign : 'left', width : '90vw' }}>
+                        Welcome to my projects list about my past experience!<br />Please feel free to understand what I've done in my past, Thanks!<p />
+                    I have been a programmer/developer in Hong Kong for over 10 years and started my journey in the UK recently just over 2
 years ago. I feel excited there a lot about game dev and technology from a new place. <p />
 In my career I mostly work with Game projects and always feel challenged and enjoyed. But it won't be limited to games dev. I
 have experience in Mobile Applications development too. <p />

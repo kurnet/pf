@@ -74,7 +74,7 @@ export class App extends React.Component{
         <header className="App-header">
           <Profile name="Ho Pong, Shum"/>
           <div style={{width: '80vw', height: this.state.vidHeight * 2, backgroundColor : '#282c40', paddingTop : '15px', margin : '10px' }} className="slider_host" >
-          <Slider hasArrows="true" onSlideChange={this.slideChangeHandler} ArrowComponent={ArrowComponent}>
+          <Slider hasArrows="true" onSlideChange={this.slideChangeHandler} ArrowComponent={ArrowComponent} >
               {
                 pdata.projects.map((item, index) => {
                   if(item.vid != undefined){

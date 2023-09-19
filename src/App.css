@@ -47,6 +47,13 @@
   overflow-y: scroll;
 }
 
+.slider_host > div > div > div:nth-child(1){
+  pointer-events: none;
+}
+.slider_host > div > div > div:nth-child(1) a{
+  pointer-events: auto;
+}
+
 .profile-header{
   align-items: center;
 }

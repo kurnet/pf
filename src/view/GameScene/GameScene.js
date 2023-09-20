@@ -1,5 +1,6 @@
 import { Sprite, Text, TextStyle } from "pixi.js";
 import { ScreenBaseContainer } from "./SceneBase";
+import { Easing, Group, Tween } from "tweedle.js";
 
 export const EVT_GAME_DONE = "evt_game_done";
 
@@ -48,17 +49,19 @@ export class GameSceneContainer extends ScreenBaseContainer {
         this.txtScore.anchor.set(1.0, 0);
         this.txtScore.x = 320;
         this.addChild(this.txtScore);
-
+        
+        this.state.started = true;
     }
 
     addedToScreen() {
         this.reset();
+        this.state.started = true;
         this.txtScore.text = `Score : ${this.gameData.score}`;
         this.txtTick.text = "Ticking";
     }
 
     reset() {
-        this.state = { click: 0 };
+        this.state = { started: true, ended: false };
         this.ticking = 0;
         this.secondPassed = 0;
 
@@ -68,21 +71,39 @@ export class GameSceneContainer extends ScreenBaseContainer {
     }
 
     update(dt) {
-        this.ticking += dt;
-        if (this.ticking >= 1000) {
-            this.secondPassed++;
-            this.txtTick.text = `${this.secondPassed}`;
-            this.ticking -= 1000;
+        if(this.state.started){
+            this.ticking += dt;
+            if (this.ticking >= 1000) {
+                this.secondPassed++;
+                this.txtTick.text = `${this.secondPassed}`;
+                this.ticking -= 1000;
+            }
+            this.elapsed += 1;
+            this.bunny.x = this.screenWidth / 2 + Math.cos(this.elapsed / 50.0) * 100.0;
         }
-        this.elapsed += 1;
-        this.bunny.x = this.screenWidth / 2 + Math.cos(this.elapsed / 50.0) * 100.0;
+
+        Group.shared.update();
     }
 
     onClickOnSprite() {
-        this.scoreUp();
+        if(this.state.started){
+            this.scoreUp();
+            const bunnyScale = this.bunny.scale;
+    
+            new Tween(bunnyScale).to({x: 1.5, y: 1.5}, 150).onComplete(()=>{
+                new Tween(bunnyScale).to({x: 1, y: 1}, 150).easing(Easing.Quadratic.InOut).start();
+            }).easing(Easing.Quadratic.InOut).start();
+    
+            if (this.gameData.score >= 20 && !this.state.ended) {
+                //this.emit(EVT_GAME_DONE);
+                this.state.ended = true;
+                this.state.started = false;
+                // try to use tween as timeout benefit from 'this'
+                new Tween().to({}, 1000).onComplete(()=>{
+                    this.emit(EVT_GAME_DONE);
+                }).start();
+            }
 
-        if (this.gameData.score >= 20) {
-            this.emit(EVT_GAME_DONE);
         }
     }
 

@@ -64,6 +64,7 @@ export class GameView extends React.Component {
                     <ul>
                         <li>Button to start with texture changing</li>
                         <li>Tap/Click to score up to 20 and back main</li>
+                        <li>Add a little bit feedback on tapping with tweedle</li>
                     </ul>
                     <br />
                 </div>

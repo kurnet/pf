@@ -51,15 +51,12 @@ export class Profile extends React.Component{
                 </Row>
                 <Row>
                     <Col style={{ fontSize : 'medium', textAlign : 'left', width : '90vw' }}>
-                        Welcome to my projects list about my past experience!<br />Please feel free to understand what I've done in my past, Thanks!<p />
-                    I have been a programmer/developer in Hong Kong for over 10 years and started my journey in the UK recently just over 2
-years ago. I feel excited there a lot about game dev and technology from a new place. <p />
-In my career I mostly work with Game projects and always feel challenged and enjoyed. But it won't be limited to games dev. I
-have experience in Mobile Applications development too. <p />
-Also I like to make tools to help solve problems, simplify processes and learn. I believe that I am a fast learner to handle new
-things.<p />
-Additionally, I enjoy working as a team member. It always makes me feel energized, but also I could work independently and
-review with a team to get the job done well. <p />
+                        <h3>Welcome to my projects list about my past experience!</h3>
+                        Please feel free to browse my projects to better understand my skills and experience. <br />
+                        I have been a programmer/developer in Hong Kong for over 10 years and started my journey in the UK recently just over 2 years ago. I am excited about the UK game development and technology scene.<p />
+                        In my career, I have mostly worked on game projects, but I also have experience in mobile applications development. I enjoy creating tools to help solve problems, simplify processes, and learn. I am a fast learner and I am always up for a challenge.
+                        <p /> I enjoy working as a team member because it allows me to learn from others and to collaborate on creative projects. I am also comfortable working independently and I am always willing to put in extra effort to get the job done.
+                        <p />Thanks for visiting my website!
                     </Col>
                 </Row>
                 <Row>

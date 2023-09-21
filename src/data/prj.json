@@ -73,6 +73,23 @@
             "vid": "j9vATdn8_NU"
         },
         {
+            "title": "Learning Unreal part.1 (Blueprint)",
+            "msg": [
+                "This is a learning project from gamedev course<br /><br />", 
+                "The course is mean to learn how to user Unreal with c++, but intro with some Blueprint development and <br/>",
+                "I learnt Unreal 5.3.0 from minmal to got the concept how it work now, and some studying online how UI work :<br /> ",
+                "<ul><li>Actor related to the logics with blueprint</li>",
+                "<li>Basic physic engine setting</li>",
+                "<li>Geometry Brushes</li>",
+                "<li>Input interaction and actor (Blueprint class) creation</li>",
+                "<li>Blueprint class structure with functions and variables</li>",
+                "<li>Some UI runtime update and delay</li>",
+                "</ul>",
+                "<br/><a href='https://kiwispace.net/BP_winExec.zip' target='_blank'>Windown ver. zip</a><br />"
+            ],
+            "vid": "nScorEeq52c"
+        },
+        {
             "title": "game",
             "type": "game"
         }

@@ -64,6 +64,10 @@
   border-radius: 50%;
 }
 
+a {
+  color: yellow;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

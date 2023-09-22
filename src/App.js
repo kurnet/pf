@@ -29,7 +29,7 @@ export class App extends React.Component{
     this.updateDimensions = this.updateDimensions.bind(this);
     this.refreshVideoComponents = this.refreshVideoComponents.bind(this);
 
-    for (let vi = 0; vi < 10; ++vi){
+    for (let vi = 0; vi < pdata.projects.length; ++vi){
       this.arySlideRef[vi] = React.createRef();
     }
   }

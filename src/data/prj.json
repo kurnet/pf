@@ -93,7 +93,7 @@
         {
             "title": "Learning Unreal part.1 (Blueprint)",
             "msg": [
-                "This is a learning project from gamedev course<br /><br />", 
+                "This is a learning project from <a href='https://www.gamedev.tv/p/unreal-5-0-c-developer-learn-c-and-make-video-games/?coupon_code=BLIMEY' target='_blank'>gamedev.tv course</a><br /><br />", 
                 "The course teaches how to use Unreal Engine with C++, but it starts with an introduction to Blueprint development.<br/>",
                 "I learned Unreal Engine 5.3.0 from scratch and gained a basic understanding of how it works. I also studied online to learn about UI development. <br /> ",
                 "<br />Here are some of the topics I learned:<ul><li>Actor-related logics with Blueprint</li>",
@@ -110,7 +110,7 @@
         {
             "title": "Learning Unreal part.2 (c++)",
             "msg": [
-                "This is another project continus on learning Unreal using c++<br /><br />", 
+                "This is another project continus on the <a href='https://www.gamedev.tv/p/unreal-5-0-c-developer-learn-c-and-make-video-games/?coupon_code=BLIMEY' target='_blank'>gamedev.tv course</a> learning Unreal using c++ <br /><br />", 
                 "Using the assets suggested by the course and learnt a lot about the basic concept from project setup to game play logics<br/>",
                 "<br />Here are some of the points I learned:<ul><li>How c++ work with VSCode and complier code refreshing Unreal Engine</li>",
                 "<li>VSCode extension help on c++ & Unreal development</li>",

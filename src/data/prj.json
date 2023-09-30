@@ -108,6 +108,20 @@
             "vid": "nScorEeq52c"
         },
         {
+            "title": "Learning Unreal part.2 (c++)",
+            "msg": [
+                "This is another project continus on learning Unreal using c++<br /><br />", 
+                "Using the assets suggested by the course and learnt a lot about the basic concept from project setup to game play logics<br/>",
+                "<br />Here are some of the points I learned:<ul><li>How c++ work with VSCode and complier code refreshing Unreal Engine</li>",
+                "<li>VSCode extension help on c++ & Unreal development</li>",
+                "<li>Functions from Unreal Libs doing the same / similar job as Blueprint</li>",
+                "<li>C++ Class & Blueprint Class & Animation Class... etc</li>",
+                "<li>Live code editing + debugger using VSCode </li>",
+                "</ul><br />There have some broken cause cannot build it up to EXE, will see how to fix it as another lesson (Proper some asset from 4.x to 5.3 issues)"
+            ],
+            "vid": "fZ7IKuNrKXs"
+        },
+        {
             "title": "game",
             "type": "game"
         }

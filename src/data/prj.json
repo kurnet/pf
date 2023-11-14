@@ -127,13 +127,13 @@
                 "A case study for myself picking up c# which is sorting performance by difference types :<br />",
                 "(Bubble, Selection, Insertion, Heap, Merge, Quick ) <br />from <a href='https://www.amazon.co.jp/-/en/%E7%9F%B3%E7%94%B0-%E4%BF%9D%E8%BC%9D/dp/479817243X'>a book </a>",
                 "Try to got the concept form the book and write it into C# language using Window Form Application got the simplicity done with time report",
-                "<br /><img src='/pf/csharp_sorting.png' />",
+                "<br /><img style='width:100%; max-width:600px;' src='/pf/csharp_sorting.png' />",
                 "<br />",
                 "The Result of it very impress but look like to balance the memory and the processing time when using very fast sorting ",
                 "Then also try to apply into some game development as well using Unity3D here, as a check-list to play with: <br />",
                 "Unity UI, Camera Movement, Player Control, Particle, Collsion, and some game logics with weapon unlocking and leveling up<br />",
                 "And pick and choose the sortings to remove GameObject from most far away and half the count, quite fun from learning this to make <a href='https://kiwispace.net/unity-build/' target='_blank'>a very basic Survivor game</a>",
-                "<img src='/pf/unity-screenshot.png' />",
+                "<img style='width:100%; max-width:600px;' src='/pf/unity-screenshot.png' />",
                 "<br /> Which I would love to try more experiment on it and partice more game logics on it as well."
             ]
         },

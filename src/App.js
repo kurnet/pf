@@ -8,6 +8,7 @@ import { Profile } from './view/Profile';
 import { MyVid } from './view/ProductVideo';
 import { GameView } from './view/GameView';
 import { useEffect } from 'react';
+import { MyHtmlContent } from './view/HtmlContent';
 
 export class App extends React.Component{
 
@@ -77,14 +78,14 @@ export class App extends React.Component{
           <Slider hasArrows="true" onSlideChange={this.slideChangeHandler} ArrowComponent={ArrowComponent} >
               {
                 pdata.projects.map((item, index) => {
-                  if(item.vid != undefined){
+                  if(item.vid !== undefined){
                     return <MyVid key={item.vid} vid={item.vid} opts={{height: this.state.vidHeight, width: this.state.vidWidth }} title={item.title} msg={item.msg} ref={this.arySlideRef[index]}/>
-                  }else if(item.type != undefined){
+                  }else if(item.type !== undefined){
                     if(item.type === "game"){
                       return <GameView key={index} data={item}/>;
-                    }else{
-                      return (<div>App<br />{item.title}<br />{item.msg}</div>);
                     }
+                  }else{
+                    return <MyHtmlContent key={index} title={item.title} msg={item.msg} />;
                   }
                 })
               }

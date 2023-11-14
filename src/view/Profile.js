@@ -55,7 +55,6 @@ export class Profile extends React.Component{
                         I invite you to learn more about my skills and experience by browsing my projects. I have been a programmer/developer in Hong Kong for over 17 years and started my journey in the UK recently just over 2 years ago. I am excited about the UK game development and technology scene.<br />
                         <br />In my career, I have mostly worked on game projects, but I also have experience in mobile applications development. I enjoy creating tools to help solve problems, simplify processes, and learn. I am a fast learner and I am always up for a challenge.
                         <p />I enjoy working as a team member because it allows me to learn from others and to collaborate on creative projects. I am also comfortable working independently and I am always willing to put in extra effort to get the job done.
-                        <p />I have doing a self development on Unreal using c++ to get more hand-on experience that I don't have on my career and more famliar with c++ again. 
                         <p />Thanks for visiting my website!
                     </Col>
                 </Row>

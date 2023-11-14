@@ -6,10 +6,6 @@ import { EVT_GAME_DONE, GameSceneContainer } from './GameScene/GameScene';
 export class GameView extends React.Component {
     screenList = [];
 
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         const thisDiv = document.getElementById('gameDiv');
 
@@ -37,7 +33,7 @@ export class GameView extends React.Component {
         this.gameScene.on(EVT_GAME_DONE, () => {
             this.app.stage.addChild(this.mainMenu);
             this.app.stage.removeChild(this.gameScene);
-        })
+        });
 
         this.app.ticker.add((dt => {
             for (const screen of this.screenList) {
@@ -67,7 +63,7 @@ export class GameView extends React.Component {
                         <li>Add a little bit feedback on tapping with tweedle</li>
                     </ul>            
                     <br />
-                    Created a project using TypeScript development at other <a href="https://kurnet.github.io/pixijs-ts/dist/" target="_blank">link</a>
+                    Created a project using TypeScript development at other <a href="https://kurnet.github.io/pixijs-ts/dist/" target="_blank" rel="noreferrer">link</a>
                 </div>
             </div>
         );
